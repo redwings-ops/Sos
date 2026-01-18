@@ -1,0 +1,92 @@
+body {
+  margin: 0;
+  height: 100vh;
+  background: #0b0b0b;
+  color: white;
+  font-family: Arial, sans-serif;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  text-align: center;
+}
+
+#sosBtn {
+  background: red;
+  border: none;
+  color: white;
+  padding: 20px 40px;
+  font-size: 22px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+#cancelBtn {
+  margin-top: 15px;
+  background: #444;
+  border: none;
+  color: white;
+  padding: 10px 30px;
+  font-size: 16px;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.hidden {
+  display: none;
+}
+
+#status {
+  margin-top: 20px;
+  font-size: 14px;
+  color: #aaa;
+}
+
+.settings {
+  margin-bottom: 20px;
+}
+
+.settings input {
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  width: 220px;
+}
+
+.settings button {
+  margin-left: 8px;
+  padding: 10px 15px;
+  border-radius: 6px;
+  border: none;
+  background: #333;
+  color: white;
+  cursor: pointer;
+}
+
+#numberList {
+  list-style: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+#numberList li {
+  background: #222;
+  padding: 8px 12px;
+  margin-top: 6px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+}
+
+#numberList button {
+  background: red;
+  border: none;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+}
