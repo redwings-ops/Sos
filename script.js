@@ -92,7 +92,11 @@ function openSMS(message) {
   }
 
   const recipients = emergencyNumbers.join(",");
-  const smsURL = `sms:${recipients}?body=${encodeURIComponent(message)}`;
+  const smsURL =
+  `sms:${recipients}` +
+  (navigator.userAgent.includes("iPhone") ? "&" : "?") +
+  `body=${encodeURIComponent(message)}`;
+
   window.location.href = smsURL;
   status.innerText = "📨 SMS app opened. Tap SEND.";
 }
